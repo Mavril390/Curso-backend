@@ -1,5 +1,3 @@
-//Desafio: Manejo de Archivos en Javascript
-
 const fs = require("fs");
 
 class Contenedor {
@@ -50,7 +48,7 @@ class Contenedor {
 
   async getAll() {
     const data = await this.getData();
-    return console.log(JSON.parse(data));
+    return JSON.parse(data);
   }
 
   async deleteById(Number) {
@@ -71,16 +69,4 @@ class Contenedor {
   }
 }
 
-const newProduct = {
-  title: "holuu",
-  price: 200,
-  thumbnail: "url",
-};
-
-const product = new Contenedor("productos");
-//product.save(newProduct);
-//product.getData();
-//product.save(newProduct);
-//product.getById(4);
-//product.deleteById(5);
-//product.deleteAll();
+module.exports = Contenedor;
