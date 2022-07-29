@@ -14,9 +14,9 @@ server.on("error", (error) => console.log(`Error en servidor ${error}`));
 let product = new Contenedor("productos");
 
 app.get("/", (req, res) => {
-  res.send({
-    Ingrese: "/productos o /productoRandom",
-  });
+  res.send(
+    "<h1>Desafio 3 - Mauricio Marinkovich</h1> <br> Ingresar /productos o /productoRandom"
+  );
 });
 
 app.get("/productos", (req, res) => {
