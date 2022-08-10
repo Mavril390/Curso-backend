@@ -1,4 +1,3 @@
-const Contenedor = require("./src/contenedor");
 const express = require("express");
 const { Router } = express;
 
