@@ -1,5 +1,22 @@
 {
+  "name": "desafio_servidor_express",
+  "version": "0.0.1",
+  "description": "",
+  "main": "productos.js",
+  "scripts": {
+    "start": "nodemon productos.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mavril390/Curso-backend"
+  },
+  "author": "Mariano Marinkovich",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }
